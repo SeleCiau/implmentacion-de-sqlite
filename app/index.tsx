@@ -2,7 +2,7 @@ import React, { useEffect, useState } from 'react';
 import { View, Text, TextInput, Button, Alert, Image, StyleSheet } from 'react-native';
 import { useRouter } from 'expo-router';
 import { initDatabase, insertarLectura } from '../lib/database';
-import { styles } from '../styles/styles';  // Ruta correcta para los estilos
+import { styles } from '../styles/styles'; // Asegúrate de que esta ruta sea correcta
 
 const Index = () => {
   const [ph, setPh] = useState<string>('');
@@ -10,7 +10,7 @@ const Index = () => {
   const router = useRouter();
 
   useEffect(() => {
-    initDatabase();  // Inicializamos la base de datos
+    initDatabase();
   }, []);
 
   const guardarLectura = () => {
@@ -56,7 +56,6 @@ const Index = () => {
         style={styles.input}
       />
 
-      {/* Contenedor para los botones */}
       <View style={styles.buttonContainer}>
         <View style={styles.button}>
           <Button title="Guardar Lectura" onPress={guardarLectura} color="#4CAF50" />
@@ -66,9 +65,10 @@ const Index = () => {
         </View>
       </View>
 
-      {/* Pie de página con los integrantes del equipo */}
-      <View style={styles.footer}>
-        <Text style={styles.footerText}>Integrantes del equipo:Canche Gomez Diego, Ciau Tuz Selena, Martin Arceo Yesenia,Moo Dzul Luis</Text>
+      <View style={{ marginTop: 30 }}>
+        <Text style={{ textAlign: 'center', fontSize: 12, color: '#555' }}>
+          Integrantes del equipo: Canche Gomez Diego, Ciau Tuz Selena, Martin Arceo Yesenia, Moo Dzul Luis
+        </Text>
       </View>
     </View>
   );

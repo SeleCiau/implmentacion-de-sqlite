@@ -85,4 +85,17 @@ export const styles = StyleSheet.create({
   button: {
     marginHorizontal:5,  
   },
+
+  footer: {
+    marginTop: 30,
+    padding: 10,
+    alignItems: 'center',
+  },
+  
+  footerText: {
+    fontSize: 14,
+    color: '#555',
+    textAlign: 'center',
+  },
+  
 });
