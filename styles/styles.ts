@@ -4,33 +4,33 @@ export const styles = StyleSheet.create({
   container: {
     flex: 1,
     padding: 20,
-    justifyContent: 'center',  // Centra los elementos verticalmente
-    alignItems: 'center',  // Centra los elementos horizontalmente
-    backgroundColor: '#E0F7FA',  // Fondo azul claro (tema de agua)
+    justifyContent: 'center',  
+    alignItems: 'center',  
+    backgroundColor: '#E0F7FA', 
   },
   image: {
-    width: '100%',  // Ajuste para que la imagen se adapte al contenedor
+    width: '100%',  
     height: 200,
     marginBottom: 20,
-    resizeMode: 'contain',  // Evita distorsión de la imagen
+    resizeMode: 'contain', 
   },
   title: {
     fontSize: 24,
     fontWeight: 'bold',
     marginBottom: 20,
-    color: '#00796b',  // Verde, relacionado con el agua limpia
-    textAlign: 'center',  // Centrado del texto
+    color: '#00796b',  
+    textAlign: 'center',  
   },
   label: {
     fontSize: 16,
     color: '#00796b',
     marginBottom: 8,
-    textAlign: 'center',  // Centrado del texto
+    textAlign: 'center',  
   },
   input: {
     width: '80%',
     padding: 10,
-    borderColor: '#00796b',  // Verde
+    borderColor: '#00796b',  
     borderWidth: 1,
     borderRadius: 5,
     marginBottom: 20,
@@ -40,7 +40,7 @@ export const styles = StyleSheet.create({
     fontWeight: 'bold',
     marginVertical: 10,
     color: '#00796b',
-    textAlign: 'center',  // Centrado del texto
+    textAlign: 'center', 
   },
   item: {
     backgroundColor: '#ffffff',
@@ -57,7 +57,7 @@ export const styles = StyleSheet.create({
   itemText: {
     fontSize: 16,
     color: '#333',
-    textAlign: 'center',  // Centrado del texto
+    textAlign: 'center',  
   },
   actions: {
     marginTop: 10,
@@ -74,15 +74,15 @@ export const styles = StyleSheet.create({
     fontSize: 16,
     fontWeight: 'bold',
   },
-  // Estilo para el contenedor de los botones
+  
   buttonContainer: {
-    flexDirection: 'row',  // Distribuye los botones en fila
-    justifyContent: 'space-between',  // Deja espacio entre los botones
-    width: '100%',  // Asegura que ocupe todo el ancho posible
+    flexDirection: 'row',  
+    justifyContent: 'space-between',  
+    width: '100%',  
     marginTop: 20,
-    paddingHorizontal: 0,  // Agrega espacio a los lados
+    paddingHorizontal: 0, 
   },
   button: {
-    marginHorizontal:5,  // Añadimos un margen horizontal para separar los botones
+    marginHorizontal:5,  
   },
 });
